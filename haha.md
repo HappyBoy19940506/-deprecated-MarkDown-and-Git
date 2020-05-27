@@ -1,3 +1,3 @@
 # notes
-This repo is for notes of my front-end learning.
+ssssssThis repo is for notes of my front-end learning.
 worini ma
