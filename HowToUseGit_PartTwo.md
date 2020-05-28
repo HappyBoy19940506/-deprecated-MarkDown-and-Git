@@ -44,9 +44,11 @@
 
 + > use "git restore --staged <file>..." to unstage)
 
-   git restore --staged <filename> can put the files in the stage area back to the working spaces. which means clean the files in the stage area. If you need to restore the changes forever, you need to do one more the `git restore <filename>` to let the files go back to the last checkpoint.
+   git restore --staged <filename> can put the files in the stage area back to the working spaces. which means clean the files in the stage area. **If you need to restore the changes forever, you need to do one more the `git restore <filename>` to let the files go back to the last checkpoint.**
   
   > git restore --staged: it can only clean the stage spaces, but didnt change anything of content in files.
+  
++ If you use `git rm` to delete some files, then you can find the info in the `git status` , but if you change your mind, and you want to get it back. You should use `git restore ` rather than `git restore --staged` . This is because git restore --staged: it can only clean the stage spaces, but didnt change anything of content in files. and there is no files actually in the stage area, so if you want to recover it, you should do the `git restore`.
 
 
 
