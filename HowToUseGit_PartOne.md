@@ -258,7 +258,7 @@ Because all git doing is to record the things, especially for codes, into binary
   > 
   > ```
 
-  :star: ***remember***: the `git diff <filename> `can only use  **for the files which are modified during the working space, which means if you have `add` or `commit ` already , **  **you can not  use `diff`  to see any changes **.
+  :star: ***remember***: the `git diff <filename> `can only use  **for the files which are modified during the working space, which means if you have `add` or `commit ` already , **  **you can not  use `diff`  to see any changes ,which means it compares files with current in the workspace and in the stage area**
 
   
 

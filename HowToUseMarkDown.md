@@ -1,3 +1,5 @@
+<img src="/Users/KevinJoestar/Downloads/IMG_1490.JPG" alt="IMG_1490" style="zoom: 25%;" />
+
 Hi see you again guys, this is happyboy's **One-page 4 One-day** tutorial for first-leaner of Markdown and we gonna use the Typora for its **editor**. If you find it remarkable and useful, feel free to compliment me on github link.
 
 # What is it?
@@ -305,7 +307,7 @@ First, lets talk about how we change the text and fonts when we write.Correctly 
 
 ### Images
 
-+ follow these rules: **\!\[name]\(links.jpg"maybe some descriptions")**
++ follow these rules: **\!\[name]\(links.jpg"maybe some descriptions") ,just one more ! piror to the syntax of links**. and it will automatically render the pic for you.
 
   > or just drag the image into typora, i think it should work.
 
@@ -353,4 +355,4 @@ First, lets talk about how we change the text and fonts when we write.Correctly 
 
 
 
-![IMG_1490](https://avatars3.githubusercontent.com/u/31208415?s=460&u=62de71b6547fd8191c30e7867330de81189bf4d4&v=4)
+![IMG_1490](/Users/KevinJoestar/Downloads/IMG_1490.JPG)
