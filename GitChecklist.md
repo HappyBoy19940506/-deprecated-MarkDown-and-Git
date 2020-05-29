@@ -4,4 +4,8 @@
 
    >git push origin --delete dev
 
-2. 
+2. How to check the remote branch list in origin/git hub:
+
+   >git branch -r
+
+3. 
