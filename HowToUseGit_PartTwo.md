@@ -404,7 +404,18 @@
 
   如果合并了分支，要返回，没关系，用`git reset --hard commitID`
 
-  
+
+
+
+
+
+### Git revert vs Git cherry-pick
+
+https://stackoverflow.com/questions/19032296/how-to-use-git-revert
+
+https://git-scm.com/docs/git-cherry-pick
+
+https://git-scm.com/docs/git-revert
 
 
 
