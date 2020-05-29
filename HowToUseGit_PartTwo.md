@@ -330,7 +330,7 @@
 
 
 
-### When BUG happens
+###  BUG happens(Git stash)
 
 + When the BUG happens, normally we can fix it on the master branch, we do:
 
@@ -408,6 +408,10 @@
 
 
 
+-----
+
+
+
 
 ### Git revert vs Git cherry-pick
 
@@ -417,11 +421,7 @@ https://git-scm.com/docs/git-cherry-pick
 
 https://git-scm.com/docs/git-revert
 
-
-
-
-
-
+------
 
 
 
@@ -429,15 +429,71 @@ https://git-scm.com/docs/git-revert
 
 [cooperation work ---using git push and git pull](https://www.liaoxuefeng.com/wiki/896043488029600/900375748016320)
 
+-----
+
 
 
 ### Git Rebase  vs Git Rebase
 
-Git base的那个
+Git base和Git merge一样： 主语是master， 然后merge 或者rebase   dev 。===让dev回到当前的master。
 
- **notes** **git:(****master****)** git rebase dev   是旧的并入新的，
+如果写反了，他会说: `already up to date`.
+
+所以，如果此时master发生变动了，你可以用 dev的主语， merge master ！
+
+> git merge xxx理解为： 我（主语）要让 xxx合并过来 ！
+
+效果一样，都可以合并成一个新的tree commit， 区别就是 merge的话 他上面会写一句 merge的。
+
+但是如果是rebase的，他会不显示 合并的那个箭头和结构，直接就是一个commit。
+
+```
+* 25f689e (HEAD -> dev) haha
+* 11c6160 (master) update GIT guILD     =========> 这个用的rebase。你看，根本没有 | \ 这些玩意儿
+* 8a1cd14 3
+* db9554a 2
+* b4f8a87 1
+* aeb1c8a (origin/master, origin/HEAD) s
+* b699f53 bug fixs
+*   7869ba7 fix conflicts            ==============>这个用的是merge，你看，很明显，显示出来是合并的
+|\  
+| * 4b4dec0 (origin/dev) upload HowToUseGit Part Two
+| * 96575dd stash
+| * fe10eb0 newfileindev
+* | 8133f15 changedthetest.md
+* | 244d97b 666
+* | 11609e4 stash
+|/  
+
+```
+
+参考资料：
+
+1. https://cloud.tencent.com/developer/news/231201
+
+2. https://blog.csdn.net/wangnan9279/article/details/79287631?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
+
+3. https://blog.csdn.net/gtlbtnq9mr3/article/details/80222523
+4. http://jartto.wang/2018/12/11/git-rebase/
+5. https://www.liaoxuefeng.com/wiki/896043488029600/1216289527823648
 
 ### Tag Management 
+
+- How to piercing? 
+
+> `git tag <v.number>`  ---> applied on the current head commit
+>
+> `git tag <version,number>  +commit ID`
+
+- How to check ?
+
+> `git tag`     ----show all ages
+>
+> `git show v1.0`   ---show version1.0 the commit info
+>
+> ```
+> $ git tag -a v0.1 -m "version 0.1 released" commit id
+> ```
 
 ### More about GitHub (pull request)
 
