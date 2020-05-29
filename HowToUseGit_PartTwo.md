@@ -419,13 +419,23 @@ https://git-scm.com/docs/git-revert
 
 
 
+
+
+
+
+
+
 ### PUSH and PULL
 
 [cooperation work ---using git push and git pull](https://www.liaoxuefeng.com/wiki/896043488029600/900375748016320)
 
 
 
-### Rebase
+### Git Rebase  vs Git Rebase
+
+Git base的那个
+
+ **notes** **git:(****master****)** git rebase dev   是旧的并入新的，
 
 ### Tag Management 
 
