@@ -447,6 +447,8 @@ Git base和Git merge一样： 主语是master， 然后merge 或者rebase   dev 
 
 但是如果是rebase的，他会不显示 合并的那个箭头和结构，直接就是一个commit。
 
+在多人开发过程中, 如果除了你以外的人老是push，你就会发现好多的||\这些玩意儿，看着很烦。
+
 ```
 * 25f689e (HEAD -> dev) haha
 * 11c6160 (master) update GIT guILD     =========> 这个用的rebase。你看，根本没有 | \ 这些玩意儿
@@ -495,11 +497,60 @@ Git base和Git merge一样： 主语是master， 然后merge 或者rebase   dev 
 > $ git tag -a v0.1 -m "version 0.1 released" commit id
 > ```
 
-### More about GitHub (pull request)
+Sources:
+
+https://www.liaoxuefeng.com/wiki/896043488029600/902335479936480
+
++ How to delete a existing tag? How to the origin tags?
+
+  https://www.liaoxuefeng.com/wiki/896043488029600/902335479936480
+
+  >因为标签 ，只是一个本地属性，你push的时候 不会自动跟上！
+  >
+  >- 命令`git push origin <tagname>`可以推送一个本地标签；
+  >- 命令`git push origin --tags`可以推送全部未推送过的本地标签；
+  >- 命令`git tag -d <tagname>`可以删除一个本地标签；
+  >- 命令`git push origin :refs/tags/<tagname>`可以删除一个远程标签。
+
+### More about GitHub (pull request fork star)
+
+https://www.liaoxuefeng.com/wiki/896043488029600/900937935629664
+
+> ### 小结
+>
+> - 在GitHub上，可以任意Fork开源仓库；
+> - 自己拥有Fork后的仓库的读写权限；
+> - 可以推送pull request给官方仓库来贡献代码。
+
+
+
+###  Some special git command
+
+1. 比如，让Git显示颜色，会让命令输出看起来更醒目：
+
+   ```
+   $ git config --global color.ui true
+   ```
+
+2. >  .gitignore 文件 是干什么的
+   >
+   > 这个也是要版本管理的，要放在git的repo中！
 
 ### Git alias
 
+https://www.liaoxuefeng.com/wiki/896043488029600/898732837407424
+
 ### GUI Git
+
+https://www.liaoxuefeng.com/wiki/896043488029600/1317161920364578
+
+
+
+
+
+Thanks everyone
+
+
 
 
 
