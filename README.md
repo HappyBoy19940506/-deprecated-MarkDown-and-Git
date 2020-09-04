@@ -1,3 +1,3 @@
 # notes
-This repo is for notes of my front-end learning.
+This repo is for notes of my Git and Markdown syntax learning.
 
